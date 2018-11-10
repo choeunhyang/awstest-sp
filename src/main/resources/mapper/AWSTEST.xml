@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.awstest.sp.AWSTEST">
+	<select id="selectAWSTESTList" resultType="awstest" parameterType="awstest">
+		select * from aws_test
+	</select>
+	<select id="selectAWSTEST" resultType="awstest">
+		select * from aws_test
+		where atnum=#{atnum}
+	</select>
+	<insert id="insertAWSTEST" parameterType="awstest">
+		insert into aws_test(atname,atage)
+		values(#{atname},#{atage})
+	</insert>
+	<update id="updateAWSTEST" parameterType="awstest">
+		update aws_test
+			set atname=#{atname},
+				atage=#{atage}
+		where atnum=#{atnum}
+	</update>
+	<delete id="deleteAWSTEST" parameterType="awstest">
+		delete from aws_test
+		where atnum=#{atnum}
+	</delete>
+</mapper>
