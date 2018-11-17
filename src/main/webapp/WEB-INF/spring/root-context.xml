@@ -27,6 +27,5 @@
 	<bean id="ss" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="ssf"/>
 	</bean>
-	<context:component-scan base-package="com.awstest.sp.dao" />
-	<context:component-scan base-package="com.awstest.sp.service" />
+	<context:component-scan base-package="com.awstest.sp" />
 </beans>
