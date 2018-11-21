@@ -10,4 +10,4 @@ public class AwsTestVO {
 	private int atnum;
 	private String atname;
 	private int atage;
-}
+} 
